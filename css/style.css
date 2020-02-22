@@ -1,0 +1,178 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* default rest */
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* main variables */
+:root {
+    --main-color:  #111;
+}
+
+/* body */
+
+body {
+	background-color: var(--main-color);
+	color: white;
+}
+
+body, html {
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+/* container */
+.container {
+	padding: 0 20px;
+}
+
+/* styling images */
+img {
+	width: 100%;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+img:hover {
+	transform: scale(1.2);
+}
+
+/* title */
+.title {
+	text-align: center;
+	font-size: 45px;
+}
+
+/* image effect */
+.zoom {
+	width: 100%;
+	overflow: hidden;
+}
+
+/* search form container */
+.search-form-container {
+	background-image: url('../images/bg.jpg');
+	background-size: cover;
+	height: 100%;
+}
+
+.search-form-container .container {
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 150px;
+}
+
+/* search container for small devices */
+@media only screen and (max-width: 820px) {
+	.search-form-container .container {
+		padding: 0 20px;
+	}
+}
+
+/* search input field */
+input[type='text'] {
+	width: 100%;
+	border: 0;
+	outline: 0;
+	padding: 10px;
+	font-size: 25px;
+	text-transform: capitalize;
+	background-color: transparent;
+	color: white;
+	border-bottom: 1px solid white;
+}
+
+/* placeholder */
+input[type='text']::placeholder {
+	color: white;
+}
+
+/* modal container */
+.modal {
+	background-color: var(--main-color);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	overflow: auto;
+	display: none;
+	padding: 0 20px;
+}
+
+/* close button */
+.close {
+	font-size: 60px;
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	right: 20px;
+}
+
+/* row */
+.row {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	overflow: auto;
+}
+
+/* for meduim devices */
+@media screen and (max-width: 900px) {
+	.row {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* for small devices */
+@media screen and (max-width: 720px) {
+	.row {
+		grid-template-columns: 1fr;
+	}
+}
+
+.row .col {
+	margin-bottom: 20px;
+}
+
+/* single row */
+.single-row {
+	margin-top: 100px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 20px;
+	overflow: auto;
+}
+
+/* for meduim devices */
+@media screen and (max-width: 820px) {
+	.single-row {
+		grid-template-columns: 1fr 2fr;
+	}
+}
+
+/* for small devices */
+@media screen and (max-width: 720px) {
+	.single-row {
+		grid-template-columns: 1fr;
+	}
+}
+
+.single-row h1 {
+	font-size: 40px;
+}
+
+.single-row p {
+	font-size: 20px;
+	margin-bottom: 5px;
+}

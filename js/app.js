@@ -2,8 +2,6 @@
 new WOW().init();
 
 // the main variables
-// api key for omdbapi
-let omdbapi = "b77b8f3e";
 // api key for the movie db
 let api = "07882d3bfddaeedc0df6afc56c3fac7d";
 // search input

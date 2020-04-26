@@ -28,7 +28,7 @@ body, html {
 
 /* container */
 .container {
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 /* styling images */
@@ -100,12 +100,13 @@ input[type='text']::placeholder {
 	background-color: var(--main-color);
 	width: 100%;
 	height: 100%;
+	transition: 0.4s;
+	z-index: 1;
+	display: none;
 	position: fixed;
 	left: 0;
 	top: 0;
-	z-index: 1;
 	overflow: auto;
-	display: none;
 	padding: 0 20px;
 }
 
@@ -174,5 +175,7 @@ input[type='text']::placeholder {
 
 .single-row p {
 	font-size: 20px;
-	margin-bottom: 5px;
+	border-bottom: 1px solid #222;
+	padding-bottom: 5px;
+	margin-bottom: 7px;
 }

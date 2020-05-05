@@ -3,7 +3,7 @@ new WOW().init();
 
 // the main variables
 // api key for the movie db
-let api = "07882d3bfddaeedc0df6afc56c3fac7d";
+let api = "your api key";
 // search input
 let search = document.querySelector('input[type="text"]');
 // the main images url
